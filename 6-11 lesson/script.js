@@ -10,11 +10,16 @@ var second = 0;
 var minute = 0;
 var interval;
 var i = 0;
+var clicked = false;
 buttonStart.addEventListener('click', start);
 function start(){
-    i = false;
-    interval = setInterval(startTimer,1);
+    i =false
+    if(!clicked){
+        interval = setInterval(startTimer,10);
+        clicked = true;
+    }
 }
+
 function startTimer(){
     tens ++;
     if(tens <= 9){
@@ -45,6 +50,7 @@ buttonStop.addEventListener('click', stop);
 function stop(){
     i = true;
     clearInterval(interval)
+    clicked = false;
 }
 buttonReset.addEventListener('click',reset);
 function reset(){
