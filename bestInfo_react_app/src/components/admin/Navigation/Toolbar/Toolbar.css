@@ -1,0 +1,25 @@
+.Toolbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  z-index: 190;
+  background-color: #5c325f;
+}
+
+.Toolbar1 nav {
+  height: 100%;
+}
+
+.Logo1 {
+  border-radius: 5px;
+  padding: 0.75rem 1.25rem;
+  background-color: white;
+}
+
+@media (max-width: 48rem) {
+  .DesktopOnly1 {
+    display: none;
+  }
+}

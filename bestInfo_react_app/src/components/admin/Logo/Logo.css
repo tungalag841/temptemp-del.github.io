@@ -1,0 +1,15 @@
+.Logo-contianer{
+  background-color: white;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.Logo-container img {
+ height: 30px;
+}
+@media (max-width:48rem ) {
+.Logo-container img {
+  width: 150px;
+}
+}

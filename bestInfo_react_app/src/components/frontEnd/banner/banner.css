@@ -1,0 +1,29 @@
+.body__banner1-figure {
+    width: 940px;
+    height: 150px;
+    margin: 1.25rem auto;
+
+  }
+  .body__banner1-img {
+    width: 100%;
+    height: 100%;
+  }
+  .body__banner2-figure {
+    width: 940px;
+    height: 150px;
+    margin-top: 0.625rem;
+  }
+  .body__banner2-img {
+    width: 100%;
+    height: 100%;
+  }
+  .sideBanner__figure {
+    width: 160px;
+    height: 500px;
+    margin: 0 0 1.25rem 0.3125rem;
+  }
+  .sideBanner__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

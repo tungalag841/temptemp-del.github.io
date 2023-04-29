@@ -1,0 +1,46 @@
+.container-news-side {
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  font-size: 0.9375rem;
+}
+
+.title a:hover {
+  color: #ff0062;
+  text-decoration: none;
+}
+.title a p {
+  font-size: 1.5625rem;
+}
+
+.title a p:hover {
+  font-size: 1.625rem;
+}
+
+.scroller{
+  overflow: scroll;
+}
+
+.scroller::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+	
+	
+}
+.scroller::-webkit-scrollbar
+{
+  width: 10px;
+	background-color: #F5F5F5;
+}
+
+
+.scroller::-webkit-scrollbar-thumb
+{
+	background-color: rgb(168, 167, 167);
+
+}
+@media (max-width: 61.875em) {
+  .container {
+    display: none;
+  }
+}

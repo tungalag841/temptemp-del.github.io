@@ -1,0 +1,249 @@
+.dateHead {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #5c325f;
+}
+.dateHead__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+}
+.dateHead__FB,
+.dateHead__TW,
+.dateHead__YT {
+  color: white;
+}
+.dateHead__TW {
+  margin: 0 0.625rem;
+}
+.dateHead__FB:hover {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 100%;
+  color: #4267b2;
+  background-color: white;
+  padding: 0.125rem;
+}
+.dateHead__TW:hover {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 100%;
+  color: #0196d8;
+  background-color: white;
+  padding: 0.125rem;
+}
+.dateHead__YT:hover {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 100%;
+  color: #f00;
+  background-color: white;
+  padding: 0.125rem;
+}
+.todayDate {
+  font-size: 1.4rem;
+  color: white;
+  line-height: 4em;
+}
+.dateHead__search {
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 30px;
+}
+.dateHead__search .search {
+  position: absolute;
+  margin: auto;
+  top: 5px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 4;
+}
+.dateHead__search .search:hover {
+  cursor: pointer;
+}
+.dateHead__search .search::before {
+  content: '';
+  position: absolute;
+  margin: auto;
+  top: 16px;
+  right: 0;
+  bottom: 0;
+  left: 14px;
+  width: 12px;
+  height: 2px;
+  background: white;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.dateHead__search .search::after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  top: -5px;
+  right: 0;
+  bottom: 0;
+  left: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 0.5s;
+}
+.dateHead__search input {
+  font-family: 'Inconsolata', monospace;
+  position: absolute;
+  margin: auto;
+  top: 5px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background: white;
+  color: black;
+  padding: 0 5rem 0 1.25rem;
+  border-radius: 30px;
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+}
+.dateHead__search input:hover {
+  cursor: pointer;
+}
+.dateHead__search input:focus {
+  width: 300px;
+  opacity: 1;
+  cursor: text;
+}
+.dateHead__search input:focus ~ .search {
+  right: -250px;
+  z-index: 6;
+}
+.dateHead__search input:focus ~ .search::before {
+  content: '';
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: #5c325f;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.dateHead__search input:focus ~ .search::after {
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  border: none;
+  background: #5c325f;
+  border-radius: 0%;
+  transform: rotate(-45deg);
+}
+.dateHead__search input::placeholder {
+  color: black;
+  opacity: 0.5;
+  font-weight: bolder;
+}
+
+/* index */
+.Background {
+  background-color: #5c325f;
+  height: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  width: 100%;
+}
+.date {
+  font-size: 0.75rem;
+  font-family: 'Roboto';
+  line-height: 4em;
+  color: #fff;
+}
+#col {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+.social {
+  border: 1px solid #5c325f;
+  background-color: #5c325f;
+  border-radius: 100%;
+  margin-top: 10;
+  color: white;
+}
+.social:hover {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 100%;
+  margin-top: 0;
+
+  color: #4267b2;
+}
+.social1 {
+  border: 1px solid #5c325f;
+  background-color: #5c325f;
+  border-radius: 100%;
+  margin-top: 0;
+  color: white;
+}
+form {
+  margin-top: 0.625rem;
+}
+input {
+  border-radius: 2%;
+}
+.social1:hover {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 100%;
+  margin-top: 0;
+  color: #0196d8;
+}
+.social2 {
+  border: 1px solid #5c325f;
+  background-color: #5c325f;
+  border-radius: 100%;
+  margin-top: 0;
+  color: white;
+}
+.social2:hover {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 100%;
+  margin-top: 0;
+  color: #ff0000;
+}
+/* 0196D8 */
+/* index */
+@media (max-width: 61.875rem) {
+  .dateHead__container {
+    padding: 0 3.25rem;
+  }
+}
+@media (max-width: 36rem) {
+  .dateHead {
+    display: none;
+  }
+}

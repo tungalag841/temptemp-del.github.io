@@ -1,0 +1,68 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.headerContent {
+  margin-bottom: 0.625rem;
+}
+.secondHead {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.secondHead__container {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondHead__logo {
+  display: flex;
+  align-items: center;
+}
+.secondHead__logo-figure {
+  width: 250px;
+  height: 35px;
+}
+.secondHead__logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.secondHead__banner-figure {
+  width: 620px;
+  height: 90px;
+  margin: 0.3125rem 0;
+}
+.secondHead__banner-img {
+  width: 100%;
+  height: 100%;
+}
+.linkBar {
+  width: 160px;
+}
+
+@media (max-width: 48rem) {
+  .secondHead__banner-figure{
+    display: none;
+  }
+}
+
+@media (max-width: 61.875rem) {
+  .secondHead__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+  }
+  .secondHead__banner-figure{
+    display: none;
+  }
+  .secondHead__banner {
+    display: none;
+  }
+}

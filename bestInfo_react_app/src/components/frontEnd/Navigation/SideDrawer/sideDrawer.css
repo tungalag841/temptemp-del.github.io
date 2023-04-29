@@ -1,0 +1,54 @@
+.SideDrawer1 {
+  position: fixed;
+  width: 300px;
+  max-width: 80%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+}
+.search {
+  position: fixed;
+  size: 20px;
+  margin-top: 5.9375rem;
+  margin-left: .75rem;
+  top: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-out;
+}
+
+.search input {
+  height: 30px;
+  width: 40%;
+}
+
+.search input:hover {
+  height: 30px;
+  width: 100%;
+}
+
+.Open {
+  transform: translateX(0);
+}
+
+.Close {
+  transform: translateX(-100%);
+}
+
+.Logo {
+  height: 50px;
+  margin-bottom: 0.9375rem;
+}
+@media (min-width: 61.875em) {
+  .SideDrawer1 {
+    display: none;
+  }
+  .sideLogo {
+    display: none;
+  }
+}

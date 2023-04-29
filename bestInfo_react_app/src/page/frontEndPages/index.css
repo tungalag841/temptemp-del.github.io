@@ -1,0 +1,43 @@
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 0.25rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+@media (max-width: 61.875em) {
+  .categoryPhone {
+    margin-right: 0.9375rem;
+  }
+  .categoryPhone1 {
+    margin-right: 3.125rem;
+  }
+  .hide {
+    display: none;
+  }
+  .pagination {
+    margin-right: 2.1875rem;
+  }
+  .categoryPhone1 iframe {
+    background-color: #5c325f;
+    width: 250px;
+  }
+}
